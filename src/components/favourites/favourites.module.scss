@@ -1,0 +1,45 @@
+.wrapper {
+  @apply w-[80%] md:w-[75%]  mx-auto pt-16;
+  .headerWrapper {
+    @apply w-[90%] md:w-[50%] mx-auto text-center;
+    .headerTitle {
+      @apply text-[30px] text-[#173F35];
+      font-weight: 600;
+    }
+    .headerParagraph {
+      @apply text-[18px] text-[#345172];
+    }
+    .headerButton {
+      @apply w-[150px] rounded-md h-12 text-[#173F35] mt-4  border border-[#173F35];
+    }
+  }
+  .cardWrapper {
+    @apply gap-3   grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+    .card {
+      @apply flex  flex-col items-center;
+
+      .cardImageWrapper {
+        @apply flex  flex-col items-center;
+        position: relative;
+        .additemIcon {
+          @apply flex justify-center items-center cursor-pointer;
+          color: white;
+          font-size: 20px;
+          width: 30px;
+          height: 30px;
+          background-color: #173f35;
+          border-radius: 50%;
+          position: absolute;
+          bottom: 15px;
+        }
+      }
+
+      p {
+        @apply text-[#173F35] text-[16px];
+      }
+      span {
+        @apply text-[#345172] text-[16px];
+      }
+    }
+  }
+}

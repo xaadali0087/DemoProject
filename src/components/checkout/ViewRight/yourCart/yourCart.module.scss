@@ -1,0 +1,33 @@
+.wrapper {
+  @apply w-full;
+  label {
+    @apply text-[28px] text-[#173F35];
+    font-weight: 600;
+  }
+
+  .itemWrapper {
+    @apply h-[240px] pr-4 mt-8;
+    overflow-y: scroll;
+    .itemsDetailWrapper {
+      @apply flex;
+      .itemImg {
+        @apply w-[130px];
+      }
+      .itemDetail {
+        @apply w-full ml-2;
+        label {
+          @apply text-[17px] text-[#173F35];
+        }
+        p {
+          @apply text-[14px] text-[#173F35]  m-0;
+        }
+        .removeButton {
+          @apply w-full flex justify-end  text-[14px] text-red-500;
+          button {
+            @apply underline;
+          }
+        }
+      }
+    }
+  }
+}

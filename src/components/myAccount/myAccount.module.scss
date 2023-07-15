@@ -1,0 +1,33 @@
+.wrapper {
+  @apply w-[80%] xl:w-[50%]  mx-auto pt-16;
+  .headerWrapper {
+    @apply flex justify-between;
+    .headerTitle {
+      @apply text-[#173F35] text-[30px];
+      font-weight: 600;
+    }
+    .editWrapper {
+      @apply flex items-center text-[#173F35];
+      .editIcon {
+        @apply text-white text-[22px] bg-[#173F35] mr-2 p-1 rounded-md;
+      }
+    }
+  }
+
+  .headerTitle {
+    @apply text-[#000000] text-[30px];
+    font-weight: 600;
+  }
+  .inputLabel {
+    @apply text-[#707070] text-[16px];
+  }
+  .passwordFieldWrapper {
+    @apply flex w-full border border-[#C2C7CD] items-center rounded-md;
+    .passwordField {
+      @apply p-3 px-4 w-full outline-none;
+    }
+  }
+  button {
+    @apply bg-[#173F35] w-full mb-5 rounded-md h-12 text-white mt-4;
+  }
+}

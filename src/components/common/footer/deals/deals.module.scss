@@ -1,0 +1,26 @@
+.wrapper {
+  @apply hidden md:grid  grid-cols-4 bg-[#52796F] py-2;
+
+  .col1 {
+    @apply flex justify-center;
+  }
+  .col2 {
+    @apply flex flex-col col-span-2 justify-center items-center w-full;
+    p {
+      @apply text-[14px] text-white mb-1;
+    }
+    .box {
+      @apply flex;
+      input {
+        @apply w-[250px] lg:w-[370px] mr-3 px-3 rounded-md text-[#979797];
+      }
+      button {
+        @apply text-white bg-[#173F35] px-4 py-3 rounded-md;
+        font-weight: 600;
+      }
+    }
+  }
+  .col3 {
+    @apply flex justify-center;
+  }
+}

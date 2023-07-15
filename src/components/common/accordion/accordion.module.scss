@@ -1,0 +1,14 @@
+.accordionItem {
+  .accordionWrapper {
+    @apply flex justify-between;
+    .accordionTitle {
+      @apply text-[#345172] text-[16px] font-semibold;
+    }
+    .accordionIcon {
+      @apply text-[26px] cursor-pointer;
+    }
+  }
+  .accordionContent {
+    @apply text-[#345172] text-[16px];
+  }
+}

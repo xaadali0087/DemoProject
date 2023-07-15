@@ -1,0 +1,19 @@
+.wrapper {
+  @apply flex items-center;
+  background-image: url("/images/cards/sliderimage.png");
+  height: 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .box {
+    @apply w-4/5 mx-auto;
+    label {
+      @apply text-[30px] text-white;
+      line-height: 45px;
+      font-weight: 600;
+    }
+    p {
+      @apply text-[18px] text-[#FFFFFF];
+      line-height: 25px;
+    }
+  }
+}

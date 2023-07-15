@@ -1,0 +1,64 @@
+.wrapper {
+  @apply grid  grid-cols-2 md:grid-cols-5 bg-[#173F35] py-10 gap-5 md:gap-0;
+  .col1 {
+    @apply flex justify-center col-span-12 md:col-span-2   pl-5 md:pl-3;
+    .box {
+      label {
+        @apply text-white text-[32px];
+      }
+      p {
+        @apply text-white text-[14px];
+      }
+      .newsletteremail {
+        @apply flex items-center justify-between border border-[#979797] px-2 w-[80%] rounded-lg mt-10;
+        input {
+          @apply bg-[#173F35] text-[#979797]  font-normal w-full px-1 rounded-none outline-none;
+
+          font-size: 15px;
+        }
+        button {
+          @apply p-2 whitespace-nowrap text-white;
+        }
+      }
+    }
+  }
+  .col2 {
+    @apply flex flex-col items-center col-span-12  md:col-auto;
+    label {
+      @apply text-white text-[18px];
+    }
+    .box {
+      @apply mt-5;
+      p {
+        @apply text-[16px] text-[#979797] cursor-pointer hover:text-white;
+        line-height: 30px;
+      }
+    }
+  }
+  .col3 {
+    @apply flex flex-col items-center col-span-12  md:col-auto;
+    label {
+      @apply text-white text-[18px];
+    }
+    .box {
+      @apply mt-5;
+      p {
+        @apply text-[16px] text-[#979797] cursor-pointer hover:text-white;
+        line-height: 30px;
+      }
+    }
+  }
+  .col4 {
+    @apply flex flex-col items-center  col-span-12  md:col-auto;
+    label {
+      @apply text-white text-[18px];
+    }
+    .box {
+      @apply mt-5 text-start;
+      p {
+        @apply text-[16px] text-[#979797] cursor-pointer hover:text-white;
+        line-height: 30px;
+      }
+    }
+  }
+}

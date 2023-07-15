@@ -1,0 +1,45 @@
+.cardWrapper {
+  &:hover {
+    .cardImageWrapper {
+      overflow: hidden;
+      border-radius: 12px;
+      img {
+        transform: scale(1.1);
+        transition: 0.8s;
+      }
+      .additemIcon {
+        background-color: #ffffff;
+        color: #173f35;
+        transition: 0.8s;
+      }
+    }
+  }
+  .cardImageWrapper {
+    @apply w-full relative flex justify-center mb-2;
+    overflow: hidden;
+    border-radius: 12px;
+    img {
+      @apply rounded-2xl  w-[350px] h-[250px] md:h-[190px] xl:h-[280px] 2xl:h-[330px];
+      transform: scale(1);
+      transition: 0.5s;
+    }
+    .additemIcon {
+      @apply flex justify-center items-center cursor-pointer;
+      color: white;
+      font-size: 20px;
+      width: 30px;
+      height: 30px;
+      background-color: #173f35;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 15px;
+      transition: 0.5s;
+    }
+  }
+  .cardTitle {
+    @apply text-[16px] lg:text-[20px] text-[#173F35];
+  }
+  .cardPrice {
+    @apply text-[#345172]  text-[16px] font-bold;
+  }
+}

@@ -1,0 +1,49 @@
+.wrapper {
+  @apply w-4/5 mx-auto border-2 border-[#E6E8EC] bg-[#FFFCF7] rounded-xl p-3 flex flex-col items-center;
+  .favoriteButtonwrapper {
+    @apply w-full flex justify-end;
+    .buttonWrapper {
+      @apply flex py-2 px-3 rounded-full bg-white;
+      .uploadButton {
+        @apply flex justify-center items-center mr-2 cursor-pointer;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        border: 2px solid #e6e8ec;
+        .uploadIcon {
+          @apply text-[20px] text-[#777E90];
+        }
+      }
+      .favoriteButton {
+        @apply flex justify-center items-center cursor-pointer;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        border: 2px solid #e6e8ec;
+        .favoriteIcon {
+          @apply text-[20px] text-[#777E90];
+        }
+      }
+      .favoriteButtonActive {
+        @apply flex justify-center items-center cursor-pointer bg-red-300;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        border: 2px solid #e6e8ec;
+        .favoriteIcon {
+          @apply text-[20px] text-[#777E90];
+        }
+      }
+    }
+  }
+  .productImageWrapper {
+    @apply w-3/4  mx-auto pb-3;
+    .productImage {
+      @apply w-full h-[20vh] md:h-[30vh] xl:h-[50vh] rounded-3xl;
+    }
+    .productImagesWrapper {
+      @apply flex w-[80%]  mt-6 mx-auto pb-3;
+      overflow-x: scroll;
+    }
+  }
+}

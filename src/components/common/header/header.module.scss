@@ -1,0 +1,92 @@
+.wrapper {
+  @apply grid grid-cols-3 border-[#E6E8EC] bg-[#FFFCF7] border-b-2 py-4 w-full box-border;
+  .menuIcon {
+    @apply lg:hidden ml-5 text-black  cursor-pointer text-3xl;
+  }
+  .col1 {
+    @apply hidden lg:flex justify-center;
+    ul {
+      @apply flex;
+      li {
+        @apply ml-5 xl:ml-7   cursor-pointer;
+        font-weight: 500;
+        font-size: 20px;
+      }
+      li::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 2px;
+        background: #173f35;
+        transition: width 0.3s;
+      }
+      li:hover::after {
+        width: 100%;
+      }
+    }
+  }
+  .col2 {
+    @apply hidden lg:flex  justify-center items-center;
+    span {
+      font-family: "Inter", sans-serif;
+      font-family: "Syne", sans-serif;
+
+      font-weight: 500;
+      font-size: 23px;
+      text-transform: uppercase;
+    }
+  }
+  .col3 {
+    @apply hidden lg:flex justify-start xl:justify-center items-center;
+    .search {
+      @apply flex  items-center;
+      .searchIcon {
+        @apply mr-2;
+      }
+      input {
+        @apply bg-[#FFFCF7] text-[#979797]  font-normal w-1/4 lg:w-[100px] px-1 rounded-none outline-none;
+
+        font-size: 20px;
+      }
+    }
+    .carticon {
+      @apply cursor-pointer h-[30px];
+    }
+    sup {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .loginbutton {
+      @apply ml-6;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .loginbutton::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #173f35;
+      transition: width 0.3s;
+    }
+    .loginbutton:hover::after {
+      width: 100%;
+    }
+    .myaccountMenu {
+      position: absolute;
+      left: 0;
+      top: 46px;
+      left: 0;
+      // justify-content: center;
+      // background-color: #f9f9f9;
+      // min-width: 160px;
+      // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      // padding: 12px 16px;
+      z-index: 2;
+      @media screen and (max-width: 1280px) {
+        left: -70px;
+      }
+    }
+  }
+}

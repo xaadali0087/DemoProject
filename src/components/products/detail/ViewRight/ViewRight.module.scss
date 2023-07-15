@@ -1,0 +1,32 @@
+.wrapper {
+  @apply w-full md:w-4/5 px-8 lg:px-0;
+  label {
+    @apply md:text-[30px] text-[23px] text-[#173F35];
+    font-weight: 600;
+  }
+  p {
+    @apply text-[20px] text-[#345172] mt-2;
+  }
+  .cartWrapper {
+    @apply flex mt-24;
+    column-gap: 20px;
+    .addtoCartButton {
+      @apply md:text-[18px] text-[14px] text-white bg-[#173F35] w-[50%] py-2 rounded-lg disabled:opacity-60 disabled:cursor-not-allowed;
+      font-weight: 550;
+    }
+    .qtyButton {
+      @apply flex items-center border border-black rounded-lg;
+      input {
+        @apply w-[50px] font-normal  text-center rounded-none outline-none bg-white;
+        font-size: 20px;
+      }
+    }
+  }
+  .freeShipping {
+    @apply text-gray-400 text-[15px] mt-2;
+    font-weight: 200;
+    span {
+      @apply underline text-[#173F35] cursor-pointer;
+    }
+  }
+}

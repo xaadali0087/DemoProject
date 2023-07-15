@@ -1,0 +1,19 @@
+.wrapper {
+  @apply flex flex-col mt-8;
+  label {
+    @apply text-center text-[24px] text-[#173F35];
+    font-weight: 600;
+  }
+  .cardWrapper {
+    @apply mt-7;
+    .card {
+      @apply ml-5;
+      .carticon {
+        @apply w-[260px] h-[260px];
+      }
+      p {
+        @apply text-[#173F35] text-[18px] py-2;
+      }
+    }
+  }
+}

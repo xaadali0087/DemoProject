@@ -1,0 +1,33 @@
+.card {
+  @apply p-4 px-4 text-white flex justify-between flex-col;
+
+  border-radius: 10px;
+  min-height: 300px;
+  background: #173f35;
+  text-align: start;
+
+  .wordsWrapper {
+    @apply 2xl:text-[16px] text-[10px];
+  }
+  .bottomWrapper {
+    @apply flex gap-2 items-end;
+    p {
+      font-size: 12px;
+      // font-weight: 700;
+    }
+    span {
+      @apply -mt-7;
+      font-weight: 700;
+    }
+  }
+  .swiper-pagination-bullet {
+    width: 15px !important;
+    height: 15px !important;
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
+  .swiper-pagination-bullet-active {
+    background: #ffffff !important;
+    width: 15px !important;
+    height: 15px !important;
+  }
+}

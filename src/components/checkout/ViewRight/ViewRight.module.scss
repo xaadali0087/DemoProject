@@ -1,0 +1,10 @@
+.wrapper {
+  @apply w-[90%] lg:w-[60%];
+  input {
+    @apply text-[#979797] mt-5 font-normal w-full px-2 p-2 rounded-md border;
+    font-size: 15px;
+  }
+  p {
+    @apply text-[14px] text-[#345172] mt-5;
+  }
+}

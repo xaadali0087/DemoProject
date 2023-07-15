@@ -1,0 +1,23 @@
+.wrapper {
+  @apply xl:h-[90vh]  flex items-center;
+  .box {
+    @apply lg:w-1/2 mx-auto px-10 lg:px-0;
+    label {
+      @apply lg:text-[40px] text-[30px]  text-[#173F35];
+      font-weight: 700;
+    }
+    p {
+      font-size: 20px;
+      color: #345172;
+    }
+    input {
+      @apply block w-full border border-[#C2C7CD] mt-3 rounded-md h-12 p-3 px-4 outline-none focus:border-[#173F35];
+    }
+    textarea {
+      @apply block w-full border border-[#C2C7CD] mt-3 rounded-md  p-3 px-4 outline-none focus:border-[#173F35];
+    }
+    button {
+      @apply bg-[#173F35] w-full mb-5 rounded-md h-12 text-white mt-4;
+    }
+  }
+}

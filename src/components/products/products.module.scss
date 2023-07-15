@@ -1,0 +1,9 @@
+.wrapper {
+  @apply grid grid-cols-1  md:grid-cols-12 box-border;
+  .col1 {
+    @apply col-span-12 md:col-span-4 pt-16 box-border;
+  }
+  .col2 {
+    @apply col-span-12 md:col-span-8  pt-16 box-border;
+  }
+}

@@ -1,0 +1,9 @@
+.wrapper {
+  @apply grid grid-cols-1 lg:grid-cols-2;
+  .col1 {
+    @apply flex justify-center  pt-16;
+  }
+  .col2 {
+    @apply flex justify-center lg:justify-start pt-28;
+  }
+}

@@ -1,0 +1,46 @@
+.card {
+  position: relative;
+  // background-image: url("/images/cards/sliderimage.png");
+  background-size: 100% 100%;
+  min-height: 650px;
+  object-fit: cover;
+  height: 650px;
+  @media screen and (max-width: 1024px) {
+    background-size: 100% 100%;
+    // background-repeat: no-repeat;
+    min-height: 350px;
+    object-fit: cover;
+    height: 350px;
+  }
+  .backgroundVideo {
+    // border:1px solid red;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  .box {
+    @apply flex flex-col items-center w-full;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    label {
+      @apply lg:text-[55px] md:text-[30px] text-[20px]  text-white;
+      font-weight: 700;
+    }
+    p {
+      @apply md:text-[28px] text-[18px] text-white text-center;
+    }
+    .exploreButton {
+      @apply flex items-center text-[15px] text-white bg-[#173F35] px-14 md:px-24 py-2 rounded-lg;
+      .searchIcon {
+        height: 24px;
+        width: 24px;
+        margin-right: 8px;
+      }
+    }
+  }
+}

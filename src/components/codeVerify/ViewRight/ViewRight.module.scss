@@ -1,0 +1,38 @@
+.wrapper {
+  @apply xl:h-[90vh]  flex items-center;
+  .box {
+    @apply lg:w-1/2 mx-auto px-10 lg:px-0;
+    label {
+      @apply lg:text-[40px] text-[30px]  text-[#173F35];
+      font-weight: 700;
+    }
+    p {
+      font-size: 18px;
+      color: #345172;
+    }
+    input {
+      @apply block w-full border border-[#C2C7CD] mt-3 rounded-md h-12 p-3 px-4 outline-none focus:border-[#173F35];
+    }
+    .otp {
+      @apply md:h-[4rem] h-[3rem];
+      width: 20% !important;
+      padding: 0px;
+
+      margin: 10px 0.3rem;
+      font-size: 1rem;
+    }
+    button {
+      @apply bg-[#173F35] w-full mb-5 rounded-md h-12 text-white mt-4;
+    }
+    .text {
+      // @apply text-center;
+      p {
+        @apply mt-4 text-[18px];
+        color: #345172;
+      }
+      span {
+        @apply mt-1 text-center text-[18px] text-[#173F35]  w-full cursor-pointer;
+      }
+    }
+  }
+}

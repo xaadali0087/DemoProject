@@ -1,0 +1,15 @@
+.wrapper {
+  background-color: #fffcf7;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  //   padding: 12px 16px;
+  z-index: 2;
+  ul {
+    .listItem {
+      @apply py-2 text-[16px] text-[#000000] cursor-pointer border-[#173F3580] border-b-[1px] px-4 hover:bg-[#52796f] hover:text-white;
+    }
+    .logoutItem {
+      @apply py-2 text-[16px] text-[#F04520] cursor-pointer border-[#173F3580] border-b-[1px] px-4 hover:bg-[#52796f] hover:text-white;
+    }
+  }
+}

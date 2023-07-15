@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Syne", sans-serif;
+}
+
+/*scrollBar*/
+::-webkit-scrollbar {
+  width: 6px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(206, 203, 203);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #173f35;
+}
+/* swiper css */
+.swiper-pagination {
+  position: relative !important;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  margin-top: 20px !important;
+}
+.swiper-pagination-bullet {
+  width: 15px !important;
+  /* background: rgba(255, 255, 255, 0.5) !important; */
+  height: 15px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #173f35 !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.swiper-button-next {
+  --swiper-navigation-size: 20px;
+  --swiper-navigation-top-offset: 85%;
+  color: #ffffff !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  background-color: #173f35 !important;
+}
+.swiper-button-prev {
+  color: #ffffff !important;
+  --swiper-navigation-size: 20px;
+  --swiper-navigation-top-offset: 85%;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  background-color: #173f35 !important;
+}
+@media screen and (max-width: 1024px) {
+  .swiper-button-next {
+    --swiper-navigation-top-offset: 75%;
+  }
+  .swiper-button-prev {
+    --swiper-navigation-top-offset: 75%;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Select input field */
+select {
+  display: block;
+  width: 100%;
+
+  padding: 0.8rem 0.5rem;
+
+  /** for the dropdown indicator */
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+input[type="radio"] {
+  --webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  outline: none;
+  border: 3px solid #173f35;
+}

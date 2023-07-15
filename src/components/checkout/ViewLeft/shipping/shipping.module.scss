@@ -1,0 +1,35 @@
+.wrapper {
+  //   @apply w-[70%];
+  .checkoutTitle {
+    @apply text-black text-[35px] font-semibold;
+  }
+  .title {
+    @apply md:text-[28px] text-[24px] text-[#173F35];
+    font-weight: 600;
+  }
+  .box {
+    @apply block sm:flex text-[#173F35];
+    column-gap: 8px;
+  }
+  .inputField {
+    @apply block w-full border border-[#C2C7CD] mt-3 rounded-md h-12 p-3 px-4 outline-none focus:border-[#173F35];
+  }
+
+  select {
+    @apply w-full border text-gray-400 border-[#C2C7CD] mt-3 rounded-md h-12  px-2 outline-none bg-white;
+  }
+
+  .checkBoxWrapper {
+    @apply flex mt-3;
+    column-gap: 8px;
+    label {
+      @apply text-[16px] text-[#173F35];
+    }
+    .checkBox {
+      @apply border border-[#C2C7CD] w-5  rounded-md  outline-none;
+    }
+  }
+  button {
+    @apply bg-[#173F35] w-full mb-5 rounded-md h-12 text-white text-[18px] mt-4 disabled:opacity-60 disabled:cursor-not-allowed;
+  }
+}

@@ -1,0 +1,6 @@
+.wrapper {
+  @apply grid grid-cols-1 lg:grid-cols-2;
+  .col {
+    @apply pt-16;
+  }
+}

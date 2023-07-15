@@ -1,0 +1,7 @@
+.wrapper {
+  @apply w-full mt-20;
+  label {
+    @apply text-[28px] text-[#173F35];
+    font-weight: 600;
+  }
+}

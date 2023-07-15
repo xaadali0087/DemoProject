@@ -1,0 +1,23 @@
+.wrapper {
+  @apply w-[65%] md:w-[85%] xl:w-[65%] mx-auto;
+  .heading {
+    @apply text-[30px];
+    font-weight: 600;
+  }
+  .conditionWrapper {
+    @apply w-full mt-10;
+    .conditionTitle {
+      @apply text-[14px] text-[#173F35];
+      text-transform: uppercase;
+    }
+    .resetWrapper {
+      @apply flex items-center cursor-pointer;
+      .resetIcon {
+        @apply mr-2 p-1 bg-[#173F35] text-white rounded-full w-[20px] h-[20px];
+      }
+      span {
+        @apply text-[14px] text-[#173F35];
+      }
+    }
+  }
+}

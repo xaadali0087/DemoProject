@@ -1,0 +1,30 @@
+.wrapper {
+  //   @apply w-[70%] bg-slate-500 mx-auto;
+  @apply w-[80%] lg:w-[70%]  mx-auto  flex flex-col items-center mt-16;
+  .mainTitleWrapper {
+    @apply flex justify-between items-center w-full whitespace-nowrap flex-wrap;
+    label {
+      @apply text-[30px] text-[#173F35];
+      font-weight: 600;
+    }
+    button {
+      @apply bg-[#173F35] w-20 flex justify-center items-center rounded-md h-10 text-white text-[18px]  disabled:opacity-60 disabled:cursor-not-allowed;
+    }
+  }
+  .tableWrapper {
+    @apply overflow-x-scroll w-full mt-10;
+    table {
+      @apply border border-gray-300 w-full;
+
+      tr {
+        @apply border border-gray-300;
+        th {
+          @apply p-4 text-[12px] text-[#345172];
+        }
+        td {
+          @apply p-4 text-[14px] text-[#25213B] text-center;
+        }
+      }
+    }
+  }
+}

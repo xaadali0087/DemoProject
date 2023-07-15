@@ -1,0 +1,17 @@
+.wrapper {
+  @apply w-[80%] lg:w-[50%] flex flex-col;
+  label {
+    @apply text-[28px] text-[#173F35];
+    font-weight: 600;
+  }
+  input {
+    @apply text-[#979797] mt-5 font-normal w-full px-1 p-2 rounded-md border;
+    font-size: 15px;
+  }
+  p {
+    @apply text-[14px] text-[#173F35] mt-3;
+  }
+  button {
+    @apply w-full mt-3 text-[16px] bg-[#173F35] text-white py-3 rounded-md disabled:opacity-60 disabled:cursor-not-allowed;
+  }
+}

@@ -1,0 +1,57 @@
+.wrapper {
+  @apply 2xl:w-3/4 w-full mx-auto flex flex-col mt-8 p-4;
+  label {
+    @apply text-center text-[24px] text-[#173F35];
+    font-weight: 600;
+  }
+  .cardWrapper {
+    @apply grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-4  xl:grid-cols-5 gap-y-5 gap-x-3 mt-5;
+    .card {
+      @apply flex  flex-col items-center w-full;
+      &:hover {
+        .cardImageWrapper {
+          overflow: hidden;
+
+          img {
+            transform: scale(1.1);
+            transition: 0.8s;
+          }
+          .additemIcon {
+            background-color: #ffffff;
+            color: #173f35;
+            transition: 0.8s;
+          }
+        }
+      }
+
+      .cardImageWrapper {
+        @apply flex  flex-col items-center mb-2;
+        position: relative;
+        overflow: hidden;
+        img {
+          transform: scale(1);
+          transition: 0.5s;
+        }
+        .additemIcon {
+          @apply flex justify-center items-center cursor-pointer;
+          color: white;
+          font-size: 20px;
+          width: 30px;
+          height: 30px;
+          background-color: #173f35;
+          border-radius: 50%;
+          position: absolute;
+          bottom: 15px;
+          transition: 0.5s;
+        }
+      }
+
+      p {
+        @apply text-[#173F35] text-[16px];
+      }
+      span {
+        @apply text-[#345172] text-[16px];
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.text {
+  @apply text-[20px] text-[#345172] mt-2;
+  span {
+    @apply text-[#173F35] underline cursor-pointer text-[16px];
+  }
+}

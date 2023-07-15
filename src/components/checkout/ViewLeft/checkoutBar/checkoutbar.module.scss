@@ -1,0 +1,10 @@
+.wrapper {
+  @apply flex items-center;
+  .inactive {
+    @apply text-[#345172] text-[17px];
+  }
+  .active {
+    @apply text-[#173F35] text-[17px];
+    font-weight: 1000;
+  }
+}

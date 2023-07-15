@@ -1,0 +1,12 @@
+.formWrapper {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-5 mt-8;
+  .inputField {
+    @apply block w-full border border-[#C2C7CD]  rounded-md h-12 p-3 px-4 outline-none focus:border-[#173F35];
+  }
+  .inputLabel {
+    @apply text-[#707070] text-[16px];
+  }
+  button {
+    @apply bg-[#173F35] w-full mb-5 rounded-md h-12 text-white mt-4;
+  }
+}
